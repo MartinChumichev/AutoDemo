@@ -9,8 +9,14 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.2</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <modules>
-        <module>PetStore_API</module>
         <module>Utility</module>
     </modules>
 
@@ -19,13 +25,6 @@
             <id>DemoQA_UI</id>
             <modules>
                 <module>DemoQA_UI</module>
-            </modules>
-        </profile>
-
-        <profile>
-            <id>PetStore_API</id>
-            <modules>
-                <module>PetStore_API</module>
             </modules>
         </profile>
 
@@ -82,20 +81,6 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>${cucumber.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
