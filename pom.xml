@@ -40,12 +40,12 @@
     </profiles>
 
     <properties>
-        <cucumber.version>7.18.0</cucumber.version>
-        <junit.version>5.10.2</junit.version>
-        <aspectj.version>1.9.21</aspectj.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <cucumber.version>7.18.0</cucumber.version>
+        <aspectj.version>1.9.21</aspectj.version>
     </properties>
 
     <build>

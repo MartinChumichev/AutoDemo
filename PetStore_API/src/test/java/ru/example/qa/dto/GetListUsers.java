@@ -5,10 +5,10 @@ import lombok.Data;
 
 @Data
 public class GetListUsers{
-	private int perPage;
+	private int per_page;
 	private int total;
 	private List<DataItem> data;
 	private int page;
-	private int totalPages;
+	private int total_pages;
 	private Support support;
 }
