@@ -4,7 +4,7 @@ import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
 import lombok.Getter;
 import lombok.Setter;
-import ru.example.qa.dto.GetListUsers;
+import ru.example.qa.dto.get.GetListUsers;
 
 import java.util.HashMap;
 import java.util.Map;

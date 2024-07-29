@@ -1,4 +1,4 @@
-package ru.example.qa.dto;
+package ru.example.qa.dto.get;
 
 import java.util.List;
 import lombok.Data;
