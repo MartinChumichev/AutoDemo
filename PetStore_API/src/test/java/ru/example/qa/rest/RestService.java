@@ -20,6 +20,16 @@ public class RestService {
         return response;
     }
 
+    public static ExtractableResponse<Response> sendPostRequest(IUrlResponseDto dtoEnum, Map<String, ?> headers,
+                                                               RestClient client, Object body) {
+        ExtractableResponse<Response> response = buildRequestSpec(headers, client)
+                .body(body)
+                .post(dtoEnum.getPath())
+                .then().extract();
+        client.setResponse(extractResponse(dtoEnum, response));
+        return response;
+    }
+
     private static RequestSpecification buildRequestSpec(Map<String, ?> headers, RestClient client) {
         return given()
                 .header((Header) headers)
