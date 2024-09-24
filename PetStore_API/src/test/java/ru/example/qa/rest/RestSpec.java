@@ -2,6 +2,7 @@ package ru.example.qa.rest;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 
@@ -14,6 +15,10 @@ public class RestSpec {
                 .log(LogDetail.ALL)
                 .setRelaxedHTTPSValidation()
                 .build();
+    }
+
+    public static void responseSpecUniq(int status) {
+        RestAssured.responseSpecification = new ResponseSpecBuilder().expectStatusCode(status).build();
     }
 
     public static void installSpec(RequestSpecBuilder requestSpecBuilder) {
