@@ -1,4 +1,4 @@
-package ru.example.qa.security;
+package ru.example.qa.security.java;
 
 import lombok.extern.slf4j.Slf4j;
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
@@ -6,7 +6,7 @@ import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import java.util.Objects;
 import java.util.Properties;
 
-import static ru.example.qa.security.ApplicationProperties.loadPropertyFromFile;
+import static ru.example.qa.security.java.ApplicationProperties.loadPropertyFromFile;
 
 @Slf4j
 public class EncryptPropertyUtils {

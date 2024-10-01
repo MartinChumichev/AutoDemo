@@ -1,4 +1,4 @@
-package ru.example.qa.security;
+package ru.example.qa.security.java;
 
 import lombok.extern.slf4j.Slf4j;
 import org.jasypt.properties.EncryptableProperties;
@@ -19,7 +19,7 @@ public class ApplicationProperties {
         loadPropertyFromFile(pathToApplicationProperties, properties);
     }
 
-    String getProperty(String key) {
+    public String getProperty(String key) {
         return properties.getProperty(key);
     }
 
