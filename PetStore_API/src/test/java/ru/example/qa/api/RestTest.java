@@ -68,7 +68,7 @@ public class RestTest {
 
     @Test
     public void deleteUserTest() {
-//        RestSpec.responseSpecUniq(204);
+        RestSpec.responseSpecUniq(204);
         given()
                 .when()
                 .delete("/api/users/2")
